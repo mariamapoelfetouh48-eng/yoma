@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>To My Pretty ♡</title>
+  <meta name="description" content="A little something made especially for you." />
+  <meta name="theme-color" content="#f7e2e6" />
+
+  <!-- heart favicon (inline, no extra request) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23c98b98' d='M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.2 6.1-7.3 16-9.9 16-19.2C32 3.8 28.2 0 23.6 0z'/%3E%3C/svg%3E" />
+
+  <!-- fonts: Cormorant Garamond (romantic serif) + Montserrat (clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       GLOBAL BACKGROUND · one continuous romantic world that lives
+       behind EVERY scene. Created once in the HTML, populated once
+       by script.js — never rebuilt when scenes change.
+  ============================================================ -->
+  <div id="global-background" class="global-bg" aria-hidden="true">
+    <div class="bg-glow bg-glow--one"></div>
+    <div class="bg-glow bg-glow--two"></div>
+    <div class="bg-glow bg-glow--three"></div>
+    <div class="bg-layer bg-layer--flowers" id="flowerField"></div>
+    <div class="bg-layer bg-layer--hearts" id="heartField"></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       SCENES · stacked in a grid; script.js fades between them
+  ============================================================ -->
+  <main class="stage">
+
+    <!-- SCENE · INTRO -->
+    <section id="scene-intro" class="scene scene--intro is-active" aria-label="Introduction">
+      <div class="ornament fx d1" aria-hidden="true">
+        <span class="line"></span><span class="gem"></span><span class="line"></span>
+      </div>
+
+      <p class="eyebrow fx d1">TO MY PRETTY</p>
+
+      <!-- name is injected from CONFIG in script.js -->
+      <h1 class="name fx d2" data-recipient>MARIAM</h1>
+
+      <div class="heart-seal fx d3" role="img" aria-label="A small heart">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="heartGradIntro" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e9aab4" />
+              <stop offset="1" stop-color="#c4798c" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#heartGradIntro)"
+            d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.2 6.1-7.3 16-9.9 16-19.2C32 3.8 28.2 0 23.6 0z" />
+        </svg>
+      </div>
+
+      <p class="whisper fx d4">A little something made especially for you &#9825;</p>
+    </section>
+
+    <!-- ============================================================
+         PART 2 — SCENE · ANNIVERSARY
+    ============================================================ -->
+    <section id="scene-anniversary" class="scene scene--anniversary" aria-label="Happy anniversary">
+
+      <!-- title lines are injected from CONFIG in script.js -->
+      <div class="title-block">
+        <span data-anniversary-title>
+          <span class="anni-top fx2 dA1">HAPPY</span><span class="anni-main fx2 dA2">ANNIVERSARY</span>
+        </span>
+
+        <p class="anni-sub fx2 dA3" data-anniversary-subtitle>Another beautiful chapter of us &#9825;</p>
+      </div>
+
+      <button id="ctaAnniversary" class="btn-special fx2 dA4" type="button"
+              aria-label="This was made especially for you — continue">
+        <span class="btn-special__label" data-cta-text>THIS WAS MADE ESPECIALLY FOR YOU</span>
+        <span class="btn-special__heart" aria-hidden="true">&#9825;</span>
+        <span class="btn-burst" aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <!-- ============================================================
+         PART 3 — SCENE · MEMORIES
+         (cards are injected from CONFIG.memoryCards in script.js)
+    ============================================================ -->
+    <section id="scene-memory" class="scene scene--memory" aria-label="Our memories">
+      <div class="memory-inner">
+
+        <div class="ornament fx3 dM1" aria-hidden="true">
+          <span class="line"></span><span class="gem"></span><span class="line"></span>
+        </div>
+
+        <h2 class="mem-heading fx3 dM1" data-memory-heading>OUR MEMORIES</h2>
+        <p class="mem-sub fx3 dM2" data-memory-subtitle>Six little moments that mean everything to me &#9825;</p>
+        <p class="mem-hint fx3 dM3" data-memory-hint>TAP A MEMORY TO OPEN &#9825;</p>
+
+        <div id="memoryGrid" class="memory-grid"></div>
+
+        <button id="ctaLetter" class="btn-special mem-cta fx3 dM4" type="button"
+                aria-label="Read this — continue to the letter">
+          <span class="btn-special__label" data-memory-cta-text>READ THIS&nbsp;&#9825;</span>
+          <span class="btn-burst" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PART 4 — SCENE · THE LOVE LETTER
+    ============================================================ -->
+    <section id="scene-letter" class="scene scene--letter" aria-label="A letter for you">
+      <div class="letter-inner">
+
+        <!-- intro -->
+        <div class="ornament fxL dL1" aria-hidden="true">
+          <span class="line"></span><span class="gem"></span><span class="line"></span>
+        </div>
+
+        <h2 class="letter-heading fxL dL1">
+          <span class="lh-top" data-letter-head-top>A LETTER</span>
+          <span class="lh-main" data-letter-head-main>FOR YOU</span>
+        </h2>
+        <p class="letter-sub fxL dL2" data-letter-intro>Something I&#8217;ve been wanting to tell you...</p>
+
+        <!-- envelope (pure CSS) -->
+        <div class="envelope-stage fxL dL3">
+          <div id="envelope" class="envelope" role="img" aria-label="Sealed love letter">
+            <div class="env-back" aria-hidden="true"></div>
+            <div class="env-mini" aria-hidden="true"></div>
+            <div class="env-pocket" aria-hidden="true"></div>
+            <p class="env-name" data-env-name>For REEM &#9825;</p>
+            <div class="env-flap" aria-hidden="true"></div>
+            <div class="env-seal" aria-hidden="true">&#9829;</div>
+          </div>
+        </div>
+
+        <button id="openLetterBtn" class="btn-special letter-open fxL dL4" type="button"
+                aria-label="Open my letter">
+          <span class="btn-special__label" data-open-letter-text>OPEN MY LETTER&nbsp;&#9825;</span>
+          <span class="btn-burst" aria-hidden="true"></span>
+        </button>
+
+        <!-- the real letter, unfolds open -->
+        <div id="paperWrap" class="paper-wrap">
+          <article class="paper" aria-label="The letter">
+            <div class="ornament paper-ornament" aria-hidden="true">
+              <span class="line"></span><span class="gem"></span><span class="line"></span>
+            </div>
+
+            <h3 class="paper-title fxP" data-paper-title>A LETTER FOR YOU</h3>
+            <p class="paper-greeting fxP" data-paper-greeting>TO MY LOVER REEM,</p>
+
+            <div class="paper-body" data-paper-body><!-- paragraphs injected from CONFIG --></div>
+
+            <footer class="paper-footer fxP">
+              <p class="paper-closing" data-paper-closing>Forever &amp; Always &#9825;</p>
+              <span class="paper-heart" aria-hidden="true">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="heartGradPaper" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#e9aab4" />
+                      <stop offset="1" stop-color="#c4798c" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#heartGradPaper)"
+                    d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.2 6.1-7.3 16-9.9 16-19.2C32 3.8 28.2 0 23.6 0z" />
+                </svg>
+              </span>
+            </footer>
+          </article>
+        </div>
+
+        <!-- final reveal: the surprise hand-off -->
+        <div class="letter-outro">
+          <p class="outro-line" data-surprise-teaser>WAIT... ONE MORE THING</p>
+          <button id="ctaSurprise" class="btn-special outro-btn" type="button"
+                  aria-label="Open my surprise">
+            <span class="btn-special__label" data-surprise-cta-text>OPEN MY SURPRISE&nbsp;&#9825;</span>
+            <span class="btn-burst" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PART 5 — SCENE · FINAL SURPRISE
+    ============================================================ -->
+    <section id="scene-surprise" class="scene scene--surprise" aria-label="A final surprise">
+      <div class="surprise-inner">
+
+        <!-- intro -->
+        <div class="ornament fxS dS1" aria-hidden="true">
+          <span class="line"></span><span class="gem"></span><span class="line"></span>
+        </div>
+
+        <h2 class="gift-heading fxS dS1">
+          <span class="sh-top" data-gift-head-top>WAIT...</span>
+          <span class="sh-main" data-gift-head-main>ONE MORE THING</span>
+        </h2>
+        <p class="gift-sub fxS dS2" data-gift-intro>Because you deserve one last surprise &#9825;</p>
+
+        <!-- gift box (pure CSS) -->
+        <div class="gift-stage fxS dS3">
+          <div id="giftBox" class="gift-box" role="img" aria-label="A wrapped gift with a heart on top">
+            <div class="glow-burst" aria-hidden="true"></div>
+            <div class="gift-base" aria-hidden="true"><div class="ribbon-v"></div></div>
+            <div class="gift-lid" aria-hidden="true">
+              <div class="ribbon-v"></div>
+              <div class="lid-heart">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="heartGradGift" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#e9aab4" />
+                      <stop offset="1" stop-color="#b8727f" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#heartGradGift)"
+                    d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.2 6.1-7.3 16-9.9 16-19.2C32 3.8 28.2 0 23.6 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="openGiftBtn" class="btn-special gift-open fxS dS4" type="button"
+                aria-label="Open my surprise">
+          <span class="btn-special__label" data-gift-btn-text>OPEN MY SURPRISE&nbsp;&#9825;</span>
+          <span class="btn-burst" aria-hidden="true"></span>
+        </button>
+
+        <!-- final reveal -->
+        <div id="revealWrap" class="reveal-wrap">
+          <figure class="reveal-photo fxR">
+            <img id="finalPhoto" alt="">
+          </figure>
+
+          <h2 class="surprise-title fxR" data-surprise-title></h2>
+          <p class="surprise-message fxR" data-surprise-message></p>
+
+          <div class="finale fxR">
+            <p class="sig-pre" data-sig-pre>With all my love,</p>
+           
+          </div>
+
+          <div id="finalFloaters" class="final-floaters" aria-hidden="true"></div>
+
+          <p class="made-with fxR" data-made-with>Made with love &#9825;</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       MUSIC · corner toggle (pause / resume, pulses while playing)
+  ============================================================ -->
+  <button id="musicToggle" class="music-toggle" type="button"
+          data-playing="false" aria-pressed="false" aria-label="Play our song">
+    <svg class="icon icon--on" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" />
+    </svg>
+    <svg class="icon icon--off" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" />
+      <line x1="3" y1="3" x2="21" y2="21" />
+    </svg>
+  </button>
+
+  <!-- MUSIC GATE · appears only if autoplay is blocked -->
+  <div id="musicGate" class="gate" role="dialog" aria-modal="true"
+       aria-label="Start the music" hidden>
+    <div class="gate-card">
+      <div class="gate-heart" aria-hidden="true">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="heartGradGate" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e9aab4" />
+              <stop offset="1" stop-color="#c4798c" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#heartGradGate)"
+            d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.2 6.1-7.3 16-9.9 16-19.2C32 3.8 28.2 0 23.6 0z" />
+        </svg>
+      </div>
+
+      <p class="gate-line">every love story deserves a soundtrack</p>
+
+      <button id="startMusicBtn" class="btn-song" type="button">Play our song&nbsp;&#9825;</button>
+
+      <p class="gate-hint">turn your sound on for the full experience</p>
+    </div>
+  </div>
+
+  <!-- the song -->
+  <audio id="song" src="assets/song.mp3" preload="auto" loop playsinline></audio>
+
+  <noscript><style>.fx, .fx2, .fx3, .fxL, .fxS { opacity: 1 !important; }</style></noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
