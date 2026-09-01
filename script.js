@@ -2,25 +2,25 @@
 
 const CONFIG = {
 
-  /* ── WHO ────────────────────────────────────────────────── */
+  /* â”€â”€ WHO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   recipientName : 'MARIAM',
-  /* ── MUSIC (one song, loops site-wide) ────────────────────
+  /* â”€â”€ MUSIC (one song, loops site-wide) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      Accepts EITHER a local file OR an online LINK, e.g.
-       music: 'assets/song.mp3',                       ← local file
-       music: 'https://example.com/our-song.mp3',      ← direct link
-     Google Drive & Dropbox SHARE links are also accepted —
+       music: 'assets/song.m4a',                       â† local file
+       music: 'https://example.com/our-song.mp3',      â† direct link
+     Google Drive & Dropbox SHARE links are also accepted â€”
      they are converted to direct-stream links automatically.
      The link must point to the audio file itself, not a page. */
-  music         : 'assets/song.mp3',
+  music         : 'assets/song.m4a',
 
-  /* ── SCENE 2 · ANNIVERSARY ──────────────────────────────── */
+  /* â”€â”€ SCENE 2 Â· ANNIVERSARY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   anniversary: {
     title   : 'HAPPY BIRTHDAY',          // first word becomes the small top line
     subtitle: 'Today is not just another day...It is the day the world became a little more beautiful because you were born.',
     button  : 'THIS MADE ESPECIALLY FOR YOU',
   },
 
-  /* ── SCENE 3 · MEMORIES ─────────────────────────────────── */
+  /* â”€â”€ SCENE 3 Â· MEMORIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   memories: {
     heading : 'OUR MEMORIES',
     subtitle: 'six little moments that mean everything to me \u2661',
@@ -29,44 +29,44 @@ const CONFIG = {
     cards   : [
       {
         image   : 'assets/memory-1.jpg',
-        title   : 'CARD 01 — THE BEGINNING',
+        title   : 'CARD 01 â€” THE BEGINNING',
         date    : '',
-        message : ' I didn not know it that day, but meeting you would become one of the most beautiful things that ever happened to me.♡ ',
+        message : ' I didn not know it that day, but meeting you would become one of the most beautiful things that ever happened to me.â™¡ ',
       },
       {
         image   : 'assets/memory-2.jpg',
-        title   : 'CARD 02 — THE CHAOS',
+        title   : 'CARD 02 â€” THE CHAOS',
         date    : '',
         message : 'Your smile has this strange way of making everything around me disappear I could look at it forever.',
       },
       {
         image   : 'assets/memory-3.jpg',
-        title   : 'CARD 03 — THE LAUGHS',
+        title   : 'CARD 03 â€” THE LAUGHS',
         date    : '',
         message : 'Maybe these moments look ordinary to everyone else... but they are some of my favorite memories because I was sharing them with you.',
       },
       {
         image   : 'assets/memory-4.jpg',
-        title   : 'CARD 04 — THROUGH EVERYTHING',
+        title   : 'CARD 04 â€” THROUGH EVERYTHING',
         date    : '',
-        message : 'Somewhere between all the laughs, late conversations and little moments, you became my favorite part of every day.♡',
+        message : 'Somewhere between all the laughs, late conversations and little moments, you became my favorite part of every day.â™¡',
       },
       {
         image   : 'assets/memory-5.jpg',
-        title   : 'CARD 05 — MORE TO COME',
+        title   : 'CARD 05 â€” MORE TO COME',
         date    : '',
-        message : 'I do not need perfect days. I just need more days with you in them. ♡',
+        message : 'I do not need perfect days. I just need more days with you in them. â™¡',
       },
       {
         image   : 'assets/memory-6.jpg',
-        title   : 'CARD 06 — MY FAVORITE PERSON',
+        title   : 'CARD 06 â€” MY FAVORITE PERSON',
         date    : '',
         message : 'Out of all the people in this world Im still so grateful that somehow I found you.',
       },
     ],
   },
 
-  /* ── SCENE 4 · LOVE LETTER ──────────────────────────────── */
+  /* â”€â”€ SCENE 4 Â· LOVE LETTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   letter: {
     intro     : 'Something I\u2019ve been wanting to tell you...',
     title     : 'A LETTER FOR YOU',
@@ -79,7 +79,7 @@ const CONFIG = {
 'I hope this new year of your life brings you happiness, beautiful moments, and everything your heart wishes for.',
 'And I hope I get to be there beside you through as many of those moments as possible.',
 'Happy birthday, my beautiful girl.',
-'I love you more than these little words could ever explain. ♡',
+'I love you more than these little words could ever explain. â™¡',
 
     ],
     closing   : 'Forever & Always \u2661',
@@ -88,7 +88,7 @@ const CONFIG = {
     button    : 'OPEN MY SURPRISE \u2661',
   },
 
-  /* ── SCENE 5 · FINAL SURPRISE ───────────────────────────── */
+  /* â”€â”€ SCENE 5 Â· FINAL SURPRISE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   surprise: {
     headTop     : 'WAIT...',
     headMain    : 'ONE MORE THING',
@@ -100,7 +100,7 @@ const CONFIG = {
     madeWith    : 'Made with love \u2661',
   },
 
-  /* ── SYSTEM · rarely edited ─────────────────────────────── */
+  /* â”€â”€ SYSTEM Â· rarely edited â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   system: {
     volume        : 0.8,
     introHoldMs   : 3800,                    // how long the intro stays (~4s)
@@ -121,7 +121,7 @@ const CONFIG = {
 
 
 /* ============================================================
-   02 · ELEMENTS & STATE
+   02 Â· ELEMENTS & STATE
    ============================================================ */
 const els = {
   recipient  : document.querySelector('[data-recipient]'),
@@ -194,7 +194,7 @@ const state = {
 
 
 /* ============================================================
-   03 · UTILITIES
+   03 Â· UTILITIES
    ============================================================ */
 const rand = (min, max) => min + Math.random() * (max - min);
 
@@ -245,7 +245,7 @@ function unlockEntrance(el) {
 
 
 /* ============================================================
-   04 · RECIPIENT NAME & TITLE
+   04 Â· RECIPIENT NAME & TITLE
    ============================================================ */
 function applyRecipient() {
   const name = (CONFIG.recipientName || '').trim();
@@ -256,15 +256,15 @@ function applyRecipient() {
 
 
 /* ============================================================
-   05 · GLOBAL BACKGROUND DECOR
-   Built ONCE at boot into #global-background — never cleared or
+   05 Â· GLOBAL BACKGROUND DECOR
+   Built ONCE at boot into #global-background â€” never cleared or
    rebuilt, so the same flowers & hearts continue seamlessly
    behind every scene. All motion lives in CSS (transform/opacity
    only); negative delays pre-scatter pieces so the garden is
    alive the instant the page paints.
    ============================================================ */
 
-/* safe zones — decoration hugs the edges / corners / top / bottom
+/* safe zones â€” decoration hugs the edges / corners / top / bottom
    bands so the centre column (titles, cards, letter, gift) and all
    interactive content stay clean */
 const SAFE_ZONES = [
@@ -302,23 +302,23 @@ function buildGlobalBackground() {
   const D      = CONFIG.system.decor || {};
   const mobile = window.matchMedia('(max-width: 600px)').matches;
 
-  /* ── falling petals (motion-only; skipped under reduced motion) */
+  /* â”€â”€ falling petals (motion-only; skipped under reduced motion) */
   if (!REDUCED_MOTION) {
     const petalCount = (D.petals || 0) + (mobile ? (D.mobileBonusPetals || 0) : 0);
     for (let i = 0; i < petalCount; i++) {
-      const d = rand(9, 16);                       // every petal its own speed…
+      const d = rand(9, 16);                       // every petal its own speedâ€¦
       spawnPiece(flowers, `petal-fall ${pick(PETAL_SHADES)}${i >= (D.petals || 0) ? ' m-only' : ''}`,
         `${rand(2, 96).toFixed(1)}%`, '0', {
           '--w' : `${rand(9, 16).toFixed(1)}px`,
           '--o' : rand(0.45, 0.68).toFixed(2),
           '--d' : `${d.toFixed(1)}s`,
-          '--dl': `${(-rand(0, d)).toFixed(1)}s`,    // …and a pre-scattered start
+          '--dl': `${(-rand(0, d)).toFixed(1)}s`,    // â€¦and a pre-scattered start
           '--sw': `${Math.round(rand(12, 30))}px`,
           '--r0': `${Math.round(rand(8, 22))}deg`,
         });
     }
 
-    /* ── floating hearts drifting slowly upward */
+    /* â”€â”€ floating hearts drifting slowly upward */
     for (let i = 0; i < (D.floatHearts || 0); i++) {
       const d = rand(18, 34);
       spawnPiece(hearts, `float-heart ${pick(HEART_SHADES)}`, `${rand(3, 95).toFixed(1)}%`, '0', {
@@ -330,7 +330,7 @@ function buildGlobalBackground() {
       });
     }
 
-    /* ── a few sparkles near edges/top/bottom */
+    /* â”€â”€ a few sparkles near edges/top/bottom */
     for (let i = 0; i < (D.sparks || 0); i++) {
       const d = rand(3.5, 7);
       spawnPiece(hearts, 'bg-spark', ...zoneSpot().split(' '), {
@@ -343,7 +343,7 @@ function buildGlobalBackground() {
     }
   }
 
-  /* ── five-petal blossoms (visible even under reduced motion) */
+  /* â”€â”€ five-petal blossoms (visible even under reduced motion) */
   for (let i = 0; i < (D.blossoms || 0); i++) {
     const el = spawnPiece(flowers, `blossom ${pick(FLOWER_SHADES)}`, ...zoneSpot().split(' '), {
       '--s' : `${Math.round(rand(22, 34))}px`,
@@ -354,7 +354,7 @@ function buildGlobalBackground() {
     for (let p = 0; p < 5; p++) el.appendChild(document.createElement('i'));
   }
 
-  /* ── large soft floral silhouettes washing the corners */
+  /* â”€â”€ large soft floral silhouettes washing the corners */
   const SILH_SPOTS = ['2% 4%', '76% 78%', '68% 3%', '3% 78%'];
   for (let i = 0; i < (D.silhouettes || 0); i++) {
     const el = spawnPiece(flowers, `blossom silhouette ${pick(FLOWER_SHADES)}`,
@@ -366,7 +366,7 @@ function buildGlobalBackground() {
     for (let p = 0; p < 5; p++) el.appendChild(document.createElement('i'));
   }
 
-  /* ── tiny buds */
+  /* â”€â”€ tiny buds */
   for (let i = 0; i < (D.buds || 0); i++) {
     spawnPiece(flowers, `bud${Math.random() < 0.5 ? ' shade-bud-b' : ''}`, ...zoneSpot().split(' '), {
       '--s'   : `${Math.round(rand(10, 15))}px`,
@@ -377,7 +377,7 @@ function buildGlobalBackground() {
     });
   }
 
-  /* ── heartbeat hearts (a few, clearly pulsing on mobile) */
+  /* â”€â”€ heartbeat hearts (a few, clearly pulsing on mobile) */
   for (let i = 0; i < (D.beatHearts || 0); i++) {
     spawnPiece(hearts, `beat-heart ${pick(HEART_SHADES)}`, ...zoneSpot().split(' '), {
       'font-size': `${Math.round(rand(20, 34))}px`,
@@ -390,10 +390,10 @@ function buildGlobalBackground() {
 
 
 /* ============================================================
-   06 · MUSIC SYSTEM
+   06 Â· MUSIC SYSTEM
    One audio element for the whole experience.
    1. Try autoplay on load.
-   2. If blocked → show the "PLAY OUR SONG ♡" overlay.
+   2. If blocked â†’ show the "PLAY OUR SONG â™¡" overlay.
    3. Corner toggle pauses / resumes anytime.
 
    MOBILE NOTE: iOS Safari / some Android browsers refuse to stream a
@@ -401,18 +401,18 @@ function buildGlobalBackground() {
    sends the wrong Content-Type (common on cheap static hosts, and the
    reason the song can play on a laptop but stay silent on a phone).
    playAsBlob() sidesteps that by downloading the whole file once into
-   memory and playing it from a blob — no Range needed.
+   memory and playing it from a blob â€” no Range needed.
    ============================================================ */
 /* Turn a pasted share-link (Drive / Dropbox) into a direct
    audio-stream URL; plain links & local paths pass through. */
 function normalizeSongUrl(url) {
   const u = String(url || '').trim();
 
-  /* Google Drive  …/file/d/<ID>/view  →  direct stream */
+  /* Google Drive  â€¦/file/d/<ID>/view  â†’  direct stream */
   const drive = u.match(/^https?:\/\/drive\.google\.com\/file\/d\/([^/&#?]+)/);
   if (drive) return `https://drive.google.com/uc?export=download&id=${drive[1]}`;
 
-  /* Dropbox share link → raw file */
+  /* Dropbox share link â†’ raw file */
   if (/^https?:\/\/(www\.)?dropbox\.com\//.test(u)) {
     let out = u.replace(/[?&]dl=0/g, '').replace(/\?&/, '?').replace(/[?&]+$/, '');
     if (!/[?&]raw=1/.test(out)) out += (out.includes('?') ? '&' : '?') + 'raw=1';
@@ -426,7 +426,7 @@ function setupMusic() {
   const a = els.audio;
   if (!a) return;
 
-  /* song source comes from CONFIG — local path OR online link */
+  /* song source comes from CONFIG â€” local path OR online link */
   const src = normalizeSongUrl(CONFIG.music);
   if (src && a.getAttribute('src') !== src) {
     a.setAttribute('src', src);
@@ -441,7 +441,7 @@ function setupMusic() {
       '[music] Could not load the song. CONFIG.music must be a DIRECT audio ' +
       'link (.mp3 / .m4a / .ogg) or a Google Drive / Dropbox share link.'
     );
-    /* the user already asked for playback → try a fresh in-memory copy */
+    /* the user already asked for playback â†’ try a fresh in-memory copy */
     if (!state.gatePending) playAsBlob(a);
   });
 
@@ -462,7 +462,7 @@ function setPlaying(isPlaying) {
   els.toggle.setAttribute('aria-label', isPlaying ? 'Pause our song' : 'Play our song');
 }
 
-/* Called from a user gesture — the browser allows playback now. */
+/* Called from a user gesture â€” the browser allows playback now. */
 function startMusicFromGesture() {
   const a = els.audio;
   if (!a) { closeGate(); return; }
@@ -472,7 +472,7 @@ function startMusicFromGesture() {
 }
 
 /* Play normally; if the browser refuses (no Range support on the host,
-   iOS quirk, …), fall back to a blob we fetched ourselves. */
+   iOS quirk, â€¦), fall back to a blob we fetched ourselves. */
 function playAudioRobust(a) {
   const attempt = a.play();
   if (attempt && typeof attempt.catch === 'function') {
@@ -536,7 +536,7 @@ function closeGate() {
 
 
 /* ============================================================
-   SCENE 2 · ANNIVERSARY
+   SCENE 2 Â· ANNIVERSARY
    ============================================================ */
 function applyAnniversaryCopy() {
   const A  = CONFIG.anniversary || {};
@@ -610,10 +610,10 @@ function bindAnniversaryScene() {
 
 
 /* ============================================================
-   SCENE 3 · MEMORIES
+   SCENE 3 Â· MEMORIES
    ============================================================ */
 
-/* static decorative icon — never fed customer content */
+/* static decorative icon â€” never fed customer content */
 const HEART_SVG =
   '<svg viewBox="0 0 32 32" fill="none" stroke="#c98b98" stroke-width="1.4" ' +
   'stroke-linejoin="round" aria-hidden="true" focusable="false">' +
@@ -651,7 +651,7 @@ function renderMemoryCards() {
     const inner = document.createElement('span');
     inner.className = 'mem-inner';
 
-    /* FRONT · photo + number + title */
+    /* FRONT Â· photo + number + title */
     const front = document.createElement('span');
     front.className = 'face face--front';
 
@@ -681,7 +681,7 @@ function renderMemoryCards() {
 
     front.append(photo, meta);
 
-    /* BACK · heart + message + optional date */
+    /* BACK Â· heart + message + optional date */
     const back = document.createElement('span');
     back.className = 'face face--back';
     const heartWrap = document.createElement('span');
@@ -705,7 +705,7 @@ function renderMemoryCards() {
     btn.appendChild(inner);
     unlockEntrance(btn);
 
-    /* flip — idempotent toggle, safe under rapid taps */
+    /* flip â€” idempotent toggle, safe under rapid taps */
     btn.addEventListener('click', () => {
       const open = btn.classList.toggle('is-flipped');
       btn.setAttribute('aria-pressed', String(open));
@@ -735,14 +735,14 @@ function bindMemoryScene() {
 
 
 /* ============================================================
-   SCENE 4 · LOVE LETTER
+   SCENE 4 Â· LOVE LETTER
    ============================================================ */
 function applyLetterCopy() {
   const L     = CONFIG.letter || {};
   const name  = (CONFIG.recipientName || '').trim();
   const words = String(L.title || '').trim().split(/\s+/).filter(Boolean);
 
-  /* "A LETTER / FOR YOU" — last word becomes the main focus line */
+  /* "A LETTER / FOR YOU" â€” last word becomes the main focus line */
   if (els.letterHeadTop && els.letterHeadMain && words.length > 1) {
     els.letterHeadTop.textContent  = words.slice(0, -1).join(' ');
     els.letterHeadMain.textContent = words[words.length - 1];
@@ -774,9 +774,9 @@ function applyLetterCopy() {
 }
 
 /* Letter opening sequence -------------------------------------
-   t≈0.15s seal fades · t≈0.32s flap opens · t≈0.56s paper rises
-   t≈1.08s envelope dims down · t≈1.18s real letter unfolds,
-   paragraphs fade in one by one · then the outro CTA reveals.  */
+   tâ‰ˆ0.15s seal fades Â· tâ‰ˆ0.32s flap opens Â· tâ‰ˆ0.56s paper rises
+   tâ‰ˆ1.08s envelope dims down Â· tâ‰ˆ1.18s real letter unfolds,
+   paragraphs fade in one by one Â· then the outro CTA reveals.  */
 function openLetterSequence() {
   const scene = els.letterScene;
   if (!scene) return;
@@ -846,7 +846,7 @@ function bindSurpriseCta() {
 
 
 /* ============================================================
-   SCENE 5 · FINAL SURPRISE
+   SCENE 5 Â· FINAL SURPRISE
    ============================================================ */
 function applySurpriseCopy() {
   const S      = CONFIG.surprise || {};
@@ -858,7 +858,7 @@ function applySurpriseCopy() {
   if (els.giftIntro)    els.giftIntro.textContent    = S.intro || '';
   if (els.giftBtnLabel) els.giftBtnLabel.textContent = CONFIG.letter.button || '';
 
-  /* final title — "\n" splits the emotional centerpiece lines */
+  /* final title â€” "\n" splits the emotional centerpiece lines */
   if (els.surpriseTitle) {
     els.surpriseTitle.textContent = '';
     String(S.title || '').split('\n').filter(Boolean).forEach((line, i) => {
@@ -974,8 +974,8 @@ function spawnFinalFloaters(container) {
 }
 
 /* Gift opening sequence ----------------------------------------
-   t≈0.12s gift grows · t≈0.48s lid lifts + glow blooms + magic
-   t≈1.4s backdrop brightens & reveal unfolds · t≈1.75s+ the
+   tâ‰ˆ0.12s gift grows Â· tâ‰ˆ0.48s lid lifts + glow blooms + magic
+   tâ‰ˆ1.4s backdrop brightens & reveal unfolds Â· tâ‰ˆ1.75s+ the
    photo, title, message and signature fade in one by one.       */
 function openGiftSequence() {
   const scene = els.giftScene;
@@ -1032,9 +1032,9 @@ function bindGiftScene() {
 
 
 /* ============================================================
-   07 · SCENE MANAGER / INTRO TIMELINE
+   07 Â· SCENE MANAGER / INTRO TIMELINE
    One reliable system for the whole flow:
-   intro → anniversary → memories → letter → surprise.
+   intro â†’ anniversary â†’ memories â†’ letter â†’ surprise.
    ============================================================ */
 function goToScene(id) {
   if (state.sceneBusy) return;             // never overlap transitions
@@ -1091,7 +1091,7 @@ function beginWhenReady() {
 
 
 /* ============================================================
-   08 · BOOT
+   08 Â· BOOT
    ============================================================ */
 (function boot() {
   applyRecipient();
